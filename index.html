@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김민지- dl,dt,dd - 설명, 정의목록태그 </title>
+ 
+ <!-- 폰트 
+  CDN(content delivery network)
+  인터넷을 통헤 사용자에게 콘텐츠를 빠르고 효율적으로 전달하기 위한 네트워크 시스템
+  =링크가 있어야지 글씨체폰트가 코딩이됨 -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Single+Day&display=swap" rel="stylesheet">
+
+  <style>
+    
+    /* 초기화 */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #bdd1db;
+      font-family: 'Nanum Gothic';
+
+      font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+    }
+
+    h1 {
+      /* 글자 중앙정렬 */
+      text-align: center;
+      /* 글자색 */
+      color: rgb(67, 54, 139);
+      /* 글자 사이즈 = 폰트 사이즈*/
+      font-size: 35px;
+      /* 상단 바깥여백   */
+      margin-top: 60px;
+    }
+
+    dl {
+      /* 내가 사이즈90% 내에 패딩값 안쪽 여백이 포함됨
+      패딩(안쪽여백)과 보더(선)를 포함하여서 지정한 크기 안에 박스 설정 */
+      box-sizing: border-box;
+      /* 중앙정렬 : 마진 상단하단20px, 좌우auto */
+      margin: 20px auto;
+      /*(테두리)둥근사각형 */
+      border-radius: 40px;
+      width: 90%;
+      /*가로사이즈 90%*/
+      background-color: #fff;
+      /*배경색*/
+      /* 그림자 x,y,투명도 색(검정 )( 1-100%, 0.5-50% ) */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      /* 안쪽여백 -한개 작성시 한쪽만  두개 작성시 위아래다 */
+      /* 바깥쪽은 마진 , 안쪽은 패딩 */
+       padding: 30px;     
+      /* padding:20px;
+          ---padding-left:20px;왼쪽의 안쪽여백
+          ---padding-right:20px;오른쪽의 안쪽여백
+          ---padding-top:20px;상단 안쪽여백
+          ---padding-bottom:20px;하단의 안쪽여백
+          
+          */
+      padding: 60px 70px 60px 70px;
+text-align: justify;
+
+
+    }
+
+    dt {
+      /* margin-left:40px;   */
+      /* 제목 왼쪽 20 픽셀 여백 */
+      color: rgb(155, 30, 68);
+      /* 글자색 */
+      font-size: 22px;
+      /* 글자 사이즈 */
+      font-weight: bold;
+      /* 글자 굵게 (100~900)*/
+      margin-bottom: 15px;
+      /* 하단여백 */
+
+    }
+   dd {
+       color: #666;
+       line-height: 1.5;
+       /* 글씨색변경, 행간 조정 1.6~1.5 */
+       letter-spacing:  -1px;
+       /* 자간 조정 */
+
+   }
+
+
+    hr {
+      border: 0;
+
+    }
+
+    /* 선굵기 않보이게=none */
+    /* 맨 밑코드가 최종코드로 입력됨  */
+  </style>
+</head>
+
+<body>
+  <!-- ctrl + / : 주석달기 -->
+  <!-- shift + alt + ↓ : 복사,붙이기 -->
+  <!-- dl>dt+dd (enter) -->
+  <!-- dl : description list (설명리스트) -->
+  <!-- dt :Definition Term (정의항목)  -->
+  <!-- dd : Description Details (세부 설명) -->
+  <h1>꽃에 대한 정의</h1><br>
+  <dl>
+    <dt>민들레</dt><br>
+    <dd>민들레는 국화과에 속하는 여러해살이 풀로, 전 세계에서 널리 볼 수 있는 식물입니다.<br>
+      민들레는 흔히 길가,들판, 정원 등에서 쉽게 발견되며,<br>
+      독특한 모양과 특성을 가지고 있습니다.</dd>
+
+  </dl>
+
+
+
+  <hr>
+
+
+
+  <dl>
+    <dt>장미</dt><br>
+    <dd>장미는 세계적으로 사랑받는 꽃으로, 아름다운 꽃잎과 독특한 향기를 지닌 대표적인 관상식물입니다. <br>
+      장미는 로맨스, 우정, 감사 등 다양한 감정을 상징하며, 꽃말과 색상이 매우 다양합니다.</dd>
+  </dl>
+
+  <hr>
+  <dl>
+    <dt>벚꽃</dt><br>
+    <dd>벚꽃(Cherry Blossom)에 대해 알아보기
+      벚꽃은 봄의 상징이자 아름다운 경관을 선사하는 나무로, 장미과에 속하는 나무에서 피는 꽃입니다.<br>
+      한국, 일본, 중국 등 아시아 지역은 물론 세계 여러 나라에서 사랑받는 꽃이며,<br>
+      벚꽃은 짧은 개화 기간으로 인해 덧없음과 아름다움을 동시에 상징합니다.</dd>
+  </dl>
+  <!-- 구분선 : hr  (horizontal rule) -->
+
+
+</body>
+
+</html>
